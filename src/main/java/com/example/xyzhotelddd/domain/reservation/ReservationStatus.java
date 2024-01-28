@@ -1,2 +1,7 @@
-package com.example.xyzhotelddd.domain.reservation;public class RegistrationStatus {
+package com.example.xyzhotelddd.domain.reservation;
+
+public enum ReservationStatus {
+    PENDING,
+    APPROVED,
+    REJECTED
 }

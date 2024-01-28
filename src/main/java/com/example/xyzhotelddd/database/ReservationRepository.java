@@ -1,16 +1,12 @@
-package com.example.xyzhotelddd.domain.reservation;
+package com.example.xyzhotelddd.database;
+import com.example.xyzhotelddd.domain.account.Client;
+import com.example.xyzhotelddd.domain.reservation.Reservation;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import java.util.List;
 
-public interface ReservationRepository {
+public interface ReservationRepository extends JpaRepository<Reservation, Long> {
 
-    Reservation findById(Long reservationId);
-
-    List<Reservation> findAll();
-
-    void save(Reservation room);
-
-    void update(Reservation room);
-
-    void delete(Reservation room);
+    List<Reservation> findByClientId(Long clientId);
 
 }

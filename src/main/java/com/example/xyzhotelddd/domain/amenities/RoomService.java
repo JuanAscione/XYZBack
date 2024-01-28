@@ -1,4 +1,7 @@
 package com.example.xyzhotelddd.domain.amenities;
 
-public class RoomDomainService {
+import org.springframework.stereotype.Service;
+
+@Service
+public class RoomService {
 }
